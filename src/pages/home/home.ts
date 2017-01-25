@@ -42,7 +42,6 @@ export class HomePage {
         secondValue = display.innerHTML;
         if(op == "/"){
           result = firstValue / secondValue;
-          alert(firstValue + " " + secondValue)
         }else if(op == "*"){
           result = firstValue * secondValue;
         }else if(op == "-"){
