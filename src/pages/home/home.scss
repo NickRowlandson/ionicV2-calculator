@@ -1,0 +1,109 @@
+/* Empty. Add your own CSS if you like */
+.scroll-content {
+  padding: 0px !important;
+}
+
+#background {
+  height:92vh;
+  font-family: sans-serif;
+}
+
+#main {
+  height:80%;
+}
+
+button {
+    border:0;
+    background-color: #ffffff;
+    margin: 0px !important;
+    padding: 0px !important;
+    line-height:0;
+}
+
+#result {
+    display:block;
+    width:100%;
+    height:20%;
+    text-align: right;
+    border:0;
+    background:#4C4C4C;
+    color:#fff;
+    padding:8px;
+    font-size:40px;
+    outline: none;
+    overflow: hidden;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+#result:hover {
+    cursor: text;
+}
+
+.rows {
+  border-bottom: 2px solid #4C4C4C;
+  margin: 0px;
+}
+
+.border {
+  border-right: 2px solid #4C4C4C;
+}
+
+.zero {
+    width:50%;
+    height:14.5vh;
+}
+
+/* Button styling */
+.btn-style {
+    width:25%;
+    height:14.5vh;
+}
+
+/* Adding background color to the top row*/
+.top-bg {
+  background:#D6D6D6;
+  color:#000;
+  font-size:26px;
+  cursor:pointer;
+  outline:none;
+}
+
+.top-bg:active {
+   background:#4C4C4C;
+   color:#fff;
+   font-size:26px;
+   cursor:pointer;
+}
+
+/* Adding background color to the number values */
+ .num-bg {
+    background:#E0E0E2;
+    color:#000;
+    font-size:26px;
+    cursor:pointer;
+}
+
+ .num-bg:active {
+    background:#4C4C4C;
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+}
+
+/*Adding background color to the operator values */
+.opera-bg {
+    background:#F5923D;
+    color:#000;
+    font-size:26px;
+    cursor: pointer;
+    outline:none;
+}
+
+.opera-bg:active {
+    background:#4C4C4C;
+    color:#fff;
+    font-size:26px;
+    cursor: pointer;
+    outline:none;
+}
