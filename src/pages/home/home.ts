@@ -14,10 +14,9 @@ export class HomePage {
 
       var num, firstValue, secondValue, result;
       var op, opSymbol;
-      var display = document.getElementById('result');
-
+      var display = document.getElementById('resultText');
       function numClicked(evt) {
-        if(num == 0){
+        if(num == 0.3){
           num = evt.target.value;
           display.innerHTML = num;
         }else{
@@ -34,7 +33,7 @@ export class HomePage {
           opSymbol = evt.target.innerHTML;
           op = evt.target.value;
           display.innerHTML = opSymbol;
-          num = 0;
+          num = 0.3;
         }
       }
 
@@ -47,7 +46,7 @@ export class HomePage {
         }else if(op == "-"){
           result = firstValue - secondValue;
         }else if(op == "+"){
-          result = firstValue + secondValue;
+          result = +firstValue + +secondValue;
         }else{
           display.innerHTML = "";
         }
@@ -74,8 +73,16 @@ export class HomePage {
         opSymbol = null;
       }
 
+      function delClicked() {
+        var length = display.innerHTML.length - 1;
+        display.innerHTML = display.innerHTML.substring(0, length);
+      }
+
       var clear = document.getElementById("clear");
       clear.addEventListener("click", clrClicked, false);
+
+      var del = document.getElementById("del");
+      del.addEventListener("click", delClicked, false);
 
       var percent = document.getElementById("percent");
       percent.addEventListener("click", opClicked, false);
