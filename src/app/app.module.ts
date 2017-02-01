@@ -6,6 +6,12 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+/*
+Project Name: COMP3025 - Assignment#1
+Author: Nicholas Rowlandson(200167125)
+Date: Tuesday January 31 2017
+*/
+
 @NgModule({
   declarations: [
     MyApp,
